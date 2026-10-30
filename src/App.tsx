@@ -30,11 +30,28 @@ function App() {
     setSelectedLetters((prev) => [...prev, uppercaseLetter]);
   };
 
+  // PANGGIL setCurrentWord DI SINI:
+  const resetGame = () => {
+    const randomWord = words[Math.floor(Math.random() * words.length)];
+    setCurrentWord((randomWord || "REACT").toUpperCase());
+    setSelectedLetters([]);
+  };
+
   return (
     <section className="flex flex-col items-center gap-2">
-      <div className="text-xl font-bold h-8">
-        {isWin && "You win, refresh and try again!"}
-        {isLoss && "Nice try, refresh and try again!"}
+      <div className="text-xl font-bold h-8 flex items-center gap-4">
+        {isWin && <span className="text-green-600">You win!</span>}
+        {isLoss && <span className="text-red-600">Nice try!</span>}
+        
+        {/* Tampilkan tombol saat permainan selesai */}
+        {isGameOver && (
+          <button
+            onClick={resetGame}
+            className="px-3 py-1 bg-blue-500 text-white text-sm rounded hover:bg-blue-600 transition"
+          >
+            Play Again
+          </button>
+        )}
       </div>
 
       <HangmanDraw attempt={incorrectLetters.length} />
