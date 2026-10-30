@@ -1,0 +1,112 @@
+
+
+
+
+
+
+
+
+
+
+
+// // type BiodataTypes = {
+// // nama: string;
+// // harga: number;
+// // isMarried: boolean;
+// // favoriteFood: string[];
+// // };
+
+// // function App() {
+// //   let nama: string ='budi';
+// //   nama = 'Andi';
+
+// //   let harga: number = 1000;
+// //   harga = 2000;
+
+// //   console.log(harga * 2);
+
+// //   let isMarried: boolean = false;
+// //   isMarried = true;
+
+// //   let favoriteFood: string[] = ['nasi', 'ayam'];
+
+// //   const biodata: BiodataTypes = {
+// //     nama: 'budi',
+// //     harga: 10000,
+// //     isMarried: false,
+// //     favoriteFood: ['nasi', 'Ayam']
+
+// //   };
+  
+// //   return (
+// //     <div>app</div>
+// //   );
+// // }
+
+// // export default App;
+
+
+
+// // function App() {
+//   // let nama: string = 'azzam';
+//   // let umur: number = 16;
+//   // let isOSIS: boolean = true;
+//   // let nilai: number | string = 90;
+
+//   // console.log(nama);
+//   // console.log(umur);
+//   // console.log(isOSIS);
+//   // console.log(nilai); 
+
+//   // let identitas: string | number;
+//   // identitas = 12345;
+//   // console.log(identitas);
+
+//   // identitas = "SISWA-XI-01";
+//   // console.log(identitas);
+
+
+// // function App() {
+// //   const calculateNumber = (a: number, b: number) => {
+// //     return  a + b;
+// //   }
+// //   return <div>{calculateNumber(10, 10)}</div>;
+// // }
+
+// // export default App;
+
+
+
+
+
+// function App() {
+//   let name: string = "Abdullah Azzam";
+//   let umur: number = 17;
+//   let isOsis: boolean = true;
+//   let nilai: number | string = 90;
+
+//   const tampilkanData = (name: string, age: number, isOsis: boolean, nilai: number | string): string => {
+//     return `Halo nama saya ${name}, umur saya ${age}, saya ${isOsis ? "adalah bagian dari OSIS" : "Bukan bagian dari OSIS"}, dan nilai saya adalah ${nilai}`;
+//   }
+
+//   console.log(tampilkanData(name, umur, isOsis, nilai));
+
+//   const cekKelulusan = (nilai: number): string => {
+//     if (nilai >= 75) {
+//       return "Selamat Anda Lulus";
+//     } else {
+//       return "Maaf Anda Tidak Lulus";
+//     }
+//   };
+
+//   cekKelulusan(nilai);
+
+//   return (
+//     <div>
+//       <p>{ tampilkanData(name, umur, isOsis, nilai) }</p>
+//       <p>{ cekKelulusan(nilai) }</p>
+//     </div>
+//   );
+// }
+
+// export default App;
